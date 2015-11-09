@@ -1,6 +1,6 @@
 __author__ = 'Jonathan'
 
-
+from primitives.frequency_analysis import FrequencyAnalysis
 
 def setup():
     return None
@@ -11,4 +11,7 @@ def teardown():
 
 
 def test_1():
-    return None
+    t = FrequencyAnalysis()
+    print(t.get_alphabet())
+    print(t.get_cmap())
+
